@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Fondo oscuro y texto claro */
+body {
+    background-color: black; /* Fondo negro */
+    color: #e0e0e0; /* Texto gris claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+  }
+  body p {
+    color: #e0e0e0; /* Texto gris medio */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 10px 0; /* Margen para separación */
+    font-size: 30px; /* Tamaño de texto */
+    text-align: center;
+    text-shadow: 2px 2px 4px lightblue;
+  }
+  body p :hover {
+    text-shadow: 2px 2px 4px green;
+  }
+  
+  /* Estilo para enlaces */
+  a {
+    color: #bb86fc; /* Morado brillante */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo para elementos personalizados */
+  app-root {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Botones personalizados */
+  button {
+    background-color: #1f1f1f; /* Botón oscuro */
+    color: #e0e0e0; /* Texto claro */
+    border: 1px solid #333; /* Borde tenue */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333; /* Resalta en hover */
+  }
+  
+  /* Estilo de formularios */
+  input, textarea {
+    background-color: #1f1f1f; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    border: 1px solid #333; /* Borde tenue */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #bb86fc; /* Resalta al enfocar */
+  }
+  
+  /* Encabezados */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Blanco puro */
+  }
+  
+  /* Estilo para un contenedor principal */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fondo más claro para contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  

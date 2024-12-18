@@ -1,0 +1,10 @@
+<section class="item-product" (click)="navigateToID()">  <!-- Se activa al hacer clic para navegar al detalle del producto -->
+    <p id="id">ID:{{item.id}}</p>                        <!-- Muestra el identificador único del producto -->
+    <div class="description">                            <!-- Contenedor para la descripción -->
+      <h2>{{item.name}}</h2>                             <!-- Muestra el nombre del producto -->
+      <p id="flavor">Sabor: {{item.flavor}}</p>          <!-- Muestra el sabor del producto -->
+      <p id="price">Precio: {{item.price}}</p>           <!-- Muestra el precio del producto -->
+      <img [src]="item.url" alt="Imagen del producto">   <!-- Muestra una imagen del producto -->
+    </div>
+  </section>
+  

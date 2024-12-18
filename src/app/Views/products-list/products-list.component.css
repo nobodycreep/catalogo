@@ -1,0 +1,60 @@
+/* Estilo para el contenedor de la lista de productos */
+.list-products {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias filas */
+    gap: 20px; /* Espacio entre productos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 20px;
+    background-color: black; /* Color de fondo suave */
+    border-radius: 10px;
+    box-shadow: 
+    4px 4px lightgreen,      /* Sombra inicial */
+    0 0 10px lightgreen,     /* Brillo suave */
+    0 0 20px lightgreen,     /* Brillo medio */
+    0 0 30px lightgreen;     /* Brillo extendido */
+    margin: 0 auto;
+    max-width: 1200px; /* Ancho máximo de la lista */
+  }
+  
+  /* Estilo para cada producto individual */
+  .item {
+    background-color: black; /* Fondo blanco para cada elemento */
+    border: 3px solid greenyellow;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 240px; /* Ancho fijo para cada producto */
+    padding: 15px;
+    text-align: center; /* Centra el contenido */
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .list-products {
+      gap: 15px;
+    }
+  
+    .item {
+      width: 45%; /* Ajusta a dos elementos por fila */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item {
+      width: 100%; /* Un elemento por fila */
+    }
+  }
+  img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #f9f9f9; /* Fondo de la imagen */
+}

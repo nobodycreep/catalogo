@@ -1,0 +1,76 @@
+/* Estilo general para la sección del producto */
+.item-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-product:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para el ID */
+  .item-product #id {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  /* Contenedor de la descripción */
+  .item-product .description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Estilo para el nombre del producto */
+  .item-product .description h2 {
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el sabor y precio */
+  .item-product #flavor,
+  .item-product #price {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Estilo para la imagen */
+  .item-product img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 10px;
+  }
+  
+  /* Respuesta para dispositivos pequeños */
+  @media (max-width: 768px) {
+    .item-product {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .item-product img {
+      margin: 10px 0 0 0;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

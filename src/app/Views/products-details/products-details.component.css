@@ -1,0 +1,108 @@
+/* Estilo principal del contenedor */
+/* Estilo general del contenedor */
+.detail-product {
+  background-color: #1e1e1e; /* Fondo negro/gris oscuro */
+  border: 1px solid #444; /* Borde tenue en gris */
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+  padding: 25px;
+  max-width: 600px;
+  margin: 30px auto;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #e0e0e0; /* Texto en gris claro */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-product:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Sección de la descripción del producto */
+.item-product {
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.item-product h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f0f0f0; /* Blanco suave */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #555; /* Línea separadora tenue */
+  padding-bottom: 10px;
+}
+
+.item-product p {
+  font-size: 18px;
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #b0b0b0; /* Texto gris más tenue */
+}
+
+/* Estilos específicos de ID y nombre */
+.item-product #id {
+  color: #ff9800; /* Color naranja */
+  font-weight: bold;
+}
+
+.item-product #name {
+  color: #b3b3b3; /* Gris claro */
+  font-style: italic;
+}
+
+/* Botón estilizado */
+button {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #6c757d, #343a40); /* Gradiente gris oscuro */
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a6268, #2d3237); /* Tonos más oscuros al hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .detail-product {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .item-product h2 {
+    font-size: 22px;
+  }
+
+  .item-product p {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #ccc; /* Borde alrededor de la imagen */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #f9f9f9; /* Fondo de la imagen */
+}
+
+
+  

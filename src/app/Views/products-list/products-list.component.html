@@ -1,0 +1,7 @@
+<section class="list-products"> <!-- Contenedor de la lista de productos -->
+    <div class="item" *ngFor="let item of listaProductos">
+      <!-- Genera un ProductItem por cada libro en la lista -->
+      <app-product-item [item]="item"></app-product-item>
+    </div>
+  </section>
+  

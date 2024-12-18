@@ -1,0 +1,12 @@
+<div class="detail-product">
+    <section class="item-product">
+      <!-- Información detallada del producto -->
+      <p id="id">ID: {{ productselected.id }}</p>
+      <h2>{{ productselected.name }}</h2>
+      <img [src]="productselected.url">
+      <p id="name">{{ productselected.flavor }}</p>
+    </section>
+    <!-- 🔙 Botón para regresar a la página principal -->
+    <button (click)="gotoHome()">Regresar</button>
+  </div>
+  
