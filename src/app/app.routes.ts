@@ -17,6 +17,11 @@ export const routes: Routes = [
     path: 'not-found/:id',
     loadComponent: () => import('./Views/not-found/not-found.component').then(m => m.NotFoundComponent)
   },
+  {
+    path: 'cart',
+    loadComponent: () => import('./Views/cart/cart.component').then(m => m.CartComponent)
+  },
+  
   // Ruta comodín: Redirige cualquier URL no definida a la página principal
   {
     path: '**',
